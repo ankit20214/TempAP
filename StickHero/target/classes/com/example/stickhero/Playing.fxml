@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.stickhero.SceneController">
+   <children>
+      <ImageView fx:id="myBackground" fitHeight="662.0" fitWidth="970.0" layoutY="-7.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@background1.jpg" />
+         </image>
+      </ImageView>
+      <Rectangle fx:id="myPlatform" fill="#131313" height="140.0" layoutX="306.0" layoutY="267.0" stroke="#131313" strokeType="INSIDE" strokeWidth="0.0" width="169.0" />
+      <Rectangle fx:id="myPlatformCurrent" fill="#131313" height="140.0" layoutY="267.0" stroke="#131313" strokeType="INSIDE" strokeWidth="0.0" width="110.0" />
+      <Rectangle arcHeight="10.0" arcWidth="10.0" height="58.0" layoutX="245.0" layoutY="22.0" opacity="0.35" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="118.0" />
+      <ImageView fx:id="heroImageView" fitHeight="31.0" fitWidth="33.0" layoutX="42.0" layoutY="236.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@myHero.png" />
+         </image>
+      </ImageView>
+      <Label fx:id="scoreLabel" alignment="CENTER" contentDisplay="CENTER" layoutX="273.0" layoutY="19.0" prefHeight="64.0" prefWidth="66.0" text="0" textFill="WHITE">
+         <font>
+            <Font size="43.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="528.0" layoutY="32.0" text="00" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="528.0" layoutY="59.0" text="00" textFill="WHITE" />
+      <Label alignment="CENTER" layoutX="528.0" layoutY="86.0" text="00" textFill="WHITE" />
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="553.0" layoutY="55.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@banana.png" />
+         </image></ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="556.0" layoutY="28.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@cherry.png" />
+         </image></ImageView>
+      <ImageView fitHeight="20.0" fitWidth="20.0" layoutX="553.0" layoutY="82.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@apple.png" />
+         </image></ImageView>
+      <Rectangle fx:id="myStick" fill="#131313" layoutX="107.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+      <Rectangle fill="#ff0202" height="6.0" layoutX="387.0" layoutY="267.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="8.0" />
+      <Label fx:id="messageLabel" alignment="CENTER" layoutX="142.0" layoutY="66.0" prefHeight="64.0" prefWidth="328.0" text="Hold your finger on the screen to stretch out the stick" textFill="WHITE" textOverrun="CLIP" />
+      <Button layoutX="23.0" layoutY="26.0" mnemonicParsing="false" text="Pause" />
+      <Button layoutX="23.0" layoutY="61.0" mnemonicParsing="false" onAction="#switchToStart" text="Save &amp; exit" />
+      <Button layoutX="23.0" layoutY="96.0" mnemonicParsing="false" onAction="#switchTogameOver" text="Endgame" />
+      <Button layoutX="22.0" layoutY="129.0" mnemonicParsing="false" onAction="#switchToPlaying" text="Restart" />
+      <Button fx:id="growButton" layoutX="20.0" layoutY="164.0" mnemonicParsing="false" text="Move Player" />
+      <Rectangle fx:id="myStick1" fill="#131313" layoutX="117.0" layoutY="277.0" stroke="BLACK" strokeType="INSIDE" strokeWidth="0.0" width="3.0" />
+      <Label fx:id="myBonusLabel" layoutX="327.0" layoutY="236.0" opacity="0.0" text="+1" textAlignment="JUSTIFY" textFill="WHITE" />
+      <Label fx:id="perfectLabel" alignment="CENTER" layoutX="272.0" layoutY="161.0" opacity="0.0" prefHeight="31.0" prefWidth="76.0" text="PERFECT!!" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Label>
+      <Button fx:id="flipButton" layoutX="109.0" layoutY="164.0" mnemonicParsing="false" text="Flip" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,9 @@
+#playButton {
+    -fx-background-color: red;
+    -fx-text-fill: white;
+    -fx-background-radius: 50%;
+    -fx-min-width: 100px;
+    -fx-min-height: 100px;
+    -fx-font-size: 25px;
+    -fx-cursor: hand;
+}
